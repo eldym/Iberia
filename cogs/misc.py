@@ -10,3 +10,6 @@ class misc(commands.Cog):
     @commands.command()
     async def ping(self, ctx):
         await ctx.reply(f"Pong! Latency: {self.bot.latency} ms")
+
+async def setup(bot):
+    await bot.add_cog(misc(bot))
