@@ -24,7 +24,7 @@ token = get_token()
 
 class bot(commands.Bot):
     def __init__(self):
-        super().__init__(command_prefix=config["prefixes"], description="Very good description",intents=discord.Intents.all())
+        super().__init__(command_prefix="$", description="Very good description",intents=discord.Intents.all())
         self.initial_extensions = INITIAL_EXTENSIONS
         self.token = token["token"]
 
